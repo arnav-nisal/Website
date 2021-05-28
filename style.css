@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: table;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .row {
+    display: table-row;
+    height: 50%;
+  }
+  
+  .row:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .row:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+  }
+
+  
+  .raw {
+    display: table-row;
+    height: 50%;
+  }
+  
+  .raw:nth-child(1) {
+    background-color: rgb(135, 109, 248);
+  }
+  
+  .raw:nth-child(2) {
+    background-color: rgb(114, 82, 255);
+  }
