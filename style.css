@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+.fight{
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    left: 60px;
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+  }
+  
+  .fight ul {
+    position: relative;
+    display: flex;
+  }
+  
+  .fight li {
+    list-style: none;
+  }
+  
+  .fight label {
+    position: relative;
+  }
+  
+  .fight input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor:none;
+    height: 80px;
+    width: 80px;
+    z-index: 100;
+  }
+  
+  .fight div {
+      position: relative;
+      height: 6px;
+      width: 1px;
+      background: tra;
+      color: rgb(0, 0, 0);
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      cursor: none;
+      margin: 15px;
+      border-radius:5px;
+      box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.986),
+        4px 4px 6px rgb(255, 255, 255),
+        inset -1px -1px 4px rgb(255, 255, 255),
+        inset 1px 1px 1px rgb(255, 255, 255);
+    }
+  
+  /* div:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 75px;
+    height: 38px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+  } */
+  
+  .fight input[type="checkbox" ]:hover ~ div {
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+      inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: glow 5s linear infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  .against {
+    margin: 0;
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 30px;
+    color: rgb(67, 245, 215);
+    letter-spacing: 3px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: fit-content;
+    position:absolute;
+    top: 30px;
+    left: 10px;
+    z-index: -1000;
+  }
+  .against div > span {
+    opacity: 0.25;
+  }
+  .against #I {
+    opacity: 1;
+    animation: flickerI 2s linear  reverse infinite;
+  }
+  .against #I::after {
+    content: '';
+    width: 150%;
+    -webkit-box-shadow: -35px 0px 60px 8px rgb(44, 255, 202);
+    -moz-box-shadow: -35px 0px 60px 8px rgb(50, 255, 204);
+    box-shadow: -35px 0px 60px 8px rgb(35, 248, 255);
+  }
+  .against #H {
+    animation: flickerH 2s linear reverse infinite
+  }
+  
+  .against #T {
+    animation: flickerH 2s linear reverse infinite
+  }
+  
+  @keyframes flickerI {
+    0% {
+      opacity: 0.4;
+    }
+    5% {
+      opacity: 0.5;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    15% {
+      opacity: 0.85;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    40% {
+      opacity: 0.25;
+    }
+    45% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.85;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flickerLG {
+    0% {
+      opacity: 0.19;
+    }
+    5% {
+      opacity: 0.2;
+    }
+    10% {
+      opacity: 0.25;
+    }
+    15% {
+      opacity: 0.35;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.4;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    40% {
+      opacity: 0.25;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    60% {
+      opacity: 0.4;
+    }
+    70% {
+      opacity: 0.35;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+  
+  @keyframes flickerH {
+    0% {
+      opacity: 0.15;
+    }
+    5% {
+      opacity: 0.2;
+    }
+    10% {
+      opacity: 0.12;
+    }
+    15% {
+      opacity: 0.2;
+    }
+    25% {
+      opacity: 0.15;
+    }
+    30% {
+      opacity: 0.4;
+    }
+    35% {
+      opacity: 0.05;
+    }
+    40% {
+      opacity: 0.12;
+    }
+    45% {
+      opacity: 0.15;
+    }
+    60% {
+      opacity: 0.3;
+    }
+    70% {
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    90% {
+      opacity: 0.18;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
+  @keyframes flickerT {
+    0% {
+      opacity: 0.01;
+    }
+    5% {
+      opacity: 0.05;
+    }
+    10% {
+      opacity: 0.03;
+    }
+    15% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.07;
+    }
+    30% {
+      opacity: 0.1;
+    }
+    35% {
+      opacity: 0.05;
+    }
+    40% {
+      opacity: 0.06;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    60% {
+      opacity: 0.;
+    }
+    70% {
+      opacity: 0.1;
+    }
+    80% {
+      opacity: 0.;
+    }
+    90% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }  
+
+  .corona {
+    font-family: 'Permanent Marker', cursive;
+    position:absolute;
+    top: -360px;
+    left: -1230px;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    z-index: -10000;
+  }
+  
+  .corona ::selection {
+    background: transparent;
+  }
+  /* CLOUDS */
+  .corona :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-radius: 100%;
+    display: block;
+    /* box-shadow: 0 0 150px 100px rgba(0, 0, 0, 0.6),
+      200px 0 200px 150px rgba(0, 0, 0, 0.6),
+      -250px 0 300px 150px rgba(0, 0, 0, 0.6),
+      550px 0 300px 200px rgba(0, 0, 0, 0.6),
+      -550px 0 300px 200px rgba(0, 0, 0, 0.6); */
+  }
+  /* JUMP */
+  .corona h1 {
+    cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .corona h1 span {
+    position: relative;
+    top: 10px;
+    left: 40px;
+    display: inline-block;
+    -webkit-animation: bounce 0.3s ease infinite alternate;
+    animation: bounce 0.3s ease infinite alternate;
+    font-size: 35px;
+    letter-spacing: 0px;
+    color: rgb(211, 38, 15);
+    text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 3px 0 rgb(0, 0, 0), 0 4px 0 rgb(0, 0, 0),
+      0 5px 0 rgb(0, 0, 0), 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+      0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .corona h1 span:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  
+  .corona h1 span:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  
+  .corona h1 span:nth-child(4) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  
+  .corona h1 span:nth-child(5) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .corona h1 span:nth-child(6) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  /* ANIMATION */
+  @-webkit-keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+        0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+        0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  @keyframes bounce {
+      100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+          0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+          0 50px 25px rgba(0, 0, 0, 0.2);
+      }
+    }
+    
+    .tagline *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Finger Paint', cursive;
+    }
+    .tagline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      position:absolute;
+      top: 70px;
+      left: 300px;
+      z-index: -200;
+    
+    }
+    .tagline .wrapper{
+      display: flex;
+    }
+    .tagline .wrapper .static-txt{
+      color: #fff;
+      font-size: 60px;
+      font-weight: 400;
+    }
+    .tagline .wrapper .dynamic-txts{
+      margin-left: 15px;
+      height: 90px;
+      line-height: 90px;
+      overflow: hidden;
+    }
+    .tagline .dynamic-txts li{
+      list-style: none;
+      color: #55d11b;
+      font-size: 50px;
+      font-weight: lighter;
+      position: relative;
+      top: 0;
+      animation: slide 12s steps(4) infinite;
+    }
+    @keyframes slide {
+      100%{
+        top: -350px;
+      }
+    }
+    .tagline .dynamic-txts li span{
+      position: relative;
+      margin: 5px 0;
+      line-height: 90px;
+    }
+    .tagline .dynamic-txts li span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: white;
+      border-left: 2px solid #21d11b;
+      animation: typing 3s steps(15) infinite;
+    }
+    @keyframes typing {
+      40%, 60%{
+        left: calc(100% + 30px);
+      }
+      100%{
+        left: 0;
+      }
+    }
+
+.handwash{
+      width: 900px;
+
+}
+.handwash .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+    .handwash .title {
+     
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    
+    .handwash .card-block {
+        font-size: 12px;
+        position: relative;
+        margin: 0;
+        padding: 1em;
+        border: none;
+        border-top: 1px solid rgba(34, 36, 38, .1);
+        box-shadow: none;
+         
+    }
+    .handwash .card {
+        font-size: 1em;
+        overflow: hidden;
+        padding: 5;
+        border: none;
+        border-radius: .28571429rem;
+        background-color: rgb(255, 255, 79);
+        background-repeat: no-repeat;
+        background-size: 1000% 1000%;
+        animation: gradient 240s ease infinite;
+        box-shadow: 0 1px 3px 0 #000000, 0 0 0 1px #000000;
+        margin-top:20px;
+        height: auto;
+        position: relative;
+        top: 350px;
+        left: 250px;
+    }
+    
+    .handwash .carousel-indicators li {
+        border-radius: 12px;
+        width: 12px;
+        height: 12px;
+        background-color: #404040;
+    }
+    .handwash .carousel-indicators li {
+        border-radius: 12px;
+        width: 12px;
+        height: 12px;
+        background-color: #404040;
+    }
+    .handwash .carousel-indicators .active {
+        background-color: white;
+        max-width: 12px;
+        margin: 0 3px;
+        height: 12px;
+    }
+    .handwash .carousel-control-prev-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    
+    .handwash .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+    
+    .handwash .btn {
+      margin-top: auto;
+    }
+
+
+.wear-mask {
+      width: 900px;
+}
+.wear-mask .card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 5;
+  border: none;
+  border-radius: .28571429rem;
+  background-color: rgb(49, 221, 127);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  animation: gradient 240s ease infinite;
+  box-shadow: 0 1px 3px 0 #000000, 0 0 0 1px #000000;
+  margin-top:20px;
+  height: auto;
+  position: relative;
+  top: 350px;
+  left: 250px;
+}
+
+.social-distancing {
+  width: 900px;
+}
+.social-distancing .card {
+font-size: 1em;
+overflow: hidden;
+padding: 5;
+border: none;
+border-radius: .28571429rem;
+background-color: rgb(255, 255, 255);
+background-repeat: no-repeat;
+background-size: 1000% 1000%;
+animation: gradient 240s ease infinite;
+box-shadow: 0 1px 3px 0 #000000, 0 0 0 1px #000000;
+margin-top:20px;
+height: auto;
+position: relative;
+top: 350px;
+left: 250px;
+}
+
+.vaccination {
+  width: 900px;
+}
+.vaccination .card {
+font-size: 1em;
+overflow: hidden;
+padding: 5;
+border: none;
+border-radius: .28571429rem;
+background-color: rgb(39, 163, 157);
+background-repeat: no-repeat;
+background-size: 1000% 1000%;
+animation: gradient 240s ease infinite;
+box-shadow: 0 1px 3px 0 #000000, 0 0 0 1px #000000;
+margin-top:20px;
+height: auto;
+position: relative;
+top: 350px;
+left: 250px;
+}
+    .well-versed-nature{
+      font-family: 'Permanent Marker', cursive;
+      position: absolute;
+      top: 350px;
+      left: 300px;
+    }
+    
+    .well-versed-nature div {
+        position: relative;
+        top: -140px;
+        left: 30px;
+        text-align: initial;
+        width: 700px;
+        border: 3px solid rgb(36, 235, 152);
+        margin: 20px;
+        height: 134px;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        z-index: -1;
+        
+      }
+      .well-versed-nature h1{
+        font-size: 35px;
+        font-family: 'Caveat', cursive;
+      }
+.covid-img{
+  position: absolute;
+  top: 50px;
+}      
+.covid-img img{
+  position: absolute;
+  top: 150px;
+  left: -120px;
+}
+.covid-img h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 420px;
+  left: 80px
+}
+.teens *{
+  box-sizing: border-box;
+}
+.teens html, body {
+  height: 100%;
+}
+.teens {
+  display: grid;
+  place-content: center;
+  align-items: center;
+  font-family: "nunito", sans-serif;
+  position: absolute;
+  top: -220px;
+  left: -200px;
+}
+.teens .card {
+  position: relative;
+  padding: 2px 3px;
+  clip-path: circle(5% at 95% 11%);
+  transition: all ease-in-out 0.3s;
+  background-color: rgb(0, 0, 0);
+}
+.teens .card__infoicon {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: ease-out 0.3s;
+}
+.teens .card__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.teens .card__description {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.teens .card__credits {
+  margin: 0;
+  padding: 4px 0;
+  font-size: 20px;
+}
+.teens .card__reference {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  color: transparent;
+  text-decoration: none;
+  transition: ease-in 0.3s;
+}
+.teens .card__reference:hover {
+  border-bottom-color: transparent;
+}
+.teens .card:hover, .card:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: rgb(255, 255, 255);
+  outline: none;
+}
+.teens .card:hover .card__infoicon, .card:focus .card__infoicon {
+  opacity: 0;
+}
+.teens .card:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.knowledge html, body {
+	height: 100%;
+}
+
+.knowledge body {
+	font-family: 'Permanent Marker', cursive;
+	color: #111;
+}
+.knowledge a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.knowledge .cta {
+	position: fixed;
+  top: 10px;
+  left: 215px;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all .2s ease;
+  z-index: 100000000000000;
+}
+
+.knowledge .cta:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 28px;
+	background: rgba(41, 248, 255, 0.5);
+	width: 56px;
+	height: 56px;
+	transition: all .3s ease;
+}
+
+.knowledge .cta span {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 900;
+	letter-spacing: .25em;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.knowledge .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #111;
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all .3s ease;
+}
+
+.knowledge .cta:hover:before {
+	width: 100%;
+	background: #30D5C8;
+}
+
+.knowledge .cta:hover svg {
+	transform: translateX(0);
+}
+
+.knowledge .cta:active {
+	transform: scale(0.96);
+}
+
+
+
+
+
+
+.mindandbody html, body {
+	height: 100%;
+}
+
+.mindandbody  body {
+	font-family: 'Permanent Marker', cursive;
+	color: #111;
+}
+.mindandbody  a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mindandbody  .cta {
+	position: fixed;
+  top: 10px;
+  left: 650px;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all .2s ease;
+  z-index: 100000000000000;
+}
+
+.mindandbody  .cta:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 28px;
+	background: rgba(74, 225, 252, 0.5);
+	width: 56px;
+	height: 56px;
+	transition: all .3s ease;
+}
+
+.mindandbody  .cta span {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 900;
+	letter-spacing: .25em;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.mindandbody  .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #111;
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all .3s ease;
+}
+
+.mindandbody  .cta:hover:before {
+	width: 100%;
+	background: #30D5C8;
+}
+
+.mindandbody  .cta:hover svg {
+	transform: translateX(0);
+}
+
+.mindandbody  .cta:active {
+	transform: scale(0.96);
+}
+
+
+.social html, body {
+	height: 100%;
+}
+
+.social  body {
+	font-family: 'Permanent Marker', cursive;
+	color: #111;
+}
+.social  a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.social  .cta {
+	position: fixed;
+  top: 10px;
+  right: 45px;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all .2s ease;
+  z-index: 100000000000000;
+}
+
+.social  .cta:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 28px;
+	background: rgba(68, 243, 255, 0.5);
+	width: 56px;
+	height: 56px;
+	transition: all .3s ease;
+}
+
+.social  .cta span {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 900;
+	letter-spacing: .25em;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.social  .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #111;
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all .3s ease;
+}
+
+.social  .cta:hover:before {
+	width: 100%;
+	background: #30D5C8;
+}
+
+.social  .cta:hover svg {
+	transform: translateX(0);
+}
+
+.social  .cta:active {
+	transform: scale(0.96);
+}

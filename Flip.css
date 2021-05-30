@@ -1,0 +1,83 @@
+.pn1 img{
+        position: absolute;
+        top:300px;
+        left:500px;
+}
+.pn3 img{
+    position: absolute;
+    top:140px;
+    left: 850px;
+    width: 500px;
+}
+
+.home html, body {
+	height: 100%;
+}
+
+.home  body {
+	font-family: 'Permanent Marker', cursive;
+	color: #111;
+}
+.home  a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.home  .cta {
+	position: fixed;
+  top: 10px;
+  left: 650px;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all .2s ease;
+  z-index: 100000000000000;
+}
+
+.home  .cta:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 28px;
+	background: rgba(74, 225, 252, 0.5);
+	width: 56px;
+	height: 56px;
+	transition: all .3s ease;
+}
+
+.home  .cta span {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 900;
+	letter-spacing: .25em;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.home  .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #111;
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all .3s ease;
+}
+
+.home  .cta:hover:before {
+	width: 100%;
+	background: #30D5C8;
+}
+
+.home  .cta:hover svg {
+	transform: translateX(0);
+}
+
+.home  .cta:active {
+	transform: scale(0.96);
+}

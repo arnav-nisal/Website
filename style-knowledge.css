@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.structure{
+    width: 900px;
+
+}
+.structure .card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+  .structure .title {
+   
+      margin-bottom: 50px;
+      text-transform: uppercase;
+  }
+  
+  .structure .card-block {
+      font-size: 12px;
+      position: relative;
+      margin: 0;
+      padding: 1em;
+      border: none;
+      border-top: 1px solid rgba(34, 36, 38, .1);
+      box-shadow: none;
+       
+  }
+  .structure .card {
+      font-size: 1em;
+      overflow: hidden;
+      padding: 5;
+      border: none;
+      border-radius: .28571429rem;
+      background-color: rgb(62, 255, 245);
+      background-repeat: no-repeat;
+      background-size: 1000% 1000%;
+      animation: gradient 240s ease infinite;
+      box-shadow: 0 1px 3px 0 #000000, 0 0 0 1px #000000;
+      margin-top:20px;
+      height: auto;
+      position: relative;
+      top: 350px;
+      left: 250px;
+  }
+  
+  .structure .carousel-indicators li {
+      border-radius: 12px;
+      width: 12px;
+      height: 12px;
+      background-color: #404040;
+  }
+  .structure .carousel-indicators li {
+      border-radius: 12px;
+      width: 12px;
+      height: 12px;
+      background-color: #404040;
+  }
+  .structure .carousel-indicators .active {
+      background-color: white;
+      max-width: 12px;
+      margin: 0 3px;
+      height: 12px;
+  }
+  .structure .carousel-control-prev-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+  
+  .structure .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+  
+  .structure .btn {
+    margin-top: auto;
+}
+.link1 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+.link2 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 150px;
+    left:500px;
+}
+
+.link3 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+
+.link4 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.link5 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+.home html, body {
+	height: 100%;
+}
+
+.home  body {
+	font-family: 'Permanent Marker', cursive;
+	color: #111;
+}
+.home  a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.home  .cta {
+	position: fixed;
+    top: 10px;
+    right: 0px;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all .2s ease;
+    z-index: 100000000000000;
+}
+
+.home  .cta:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 28px;
+	background: rgba(74, 225, 252, 0.5);
+	width: 56px;
+	height: 56px;
+	transition: all .3s ease;
+}
+
+.home  .cta span {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 900;
+	letter-spacing: .25em;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.home  .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #111;
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all .3s ease;
+}
+
+.home  .cta:hover:before {
+	width: 100%;
+	background: #30D5C8;
+}
+
+.home  .cta:hover svg {
+	transform: translateX(0);
+}
+
+.home  .cta:active {
+	transform: scale(0.96);
+}
